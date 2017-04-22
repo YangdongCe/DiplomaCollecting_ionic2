@@ -1,0 +1,12 @@
+
+  <ion-item>
+    <ion-label fixed color="secondary" >Username</ion-label>
+    <ion-input type="text" [(ngModel)]="myname" ></ion-input>
+  </ion-item>
+
+
+  <ion-item>
+    <ion-label fixed color="secondary">Password</ion-label>
+    <ion-input type="password" [(ngModel)]="mypass"></ion-input>
+  </ion-item>
+  <button ion-button  color="secondary" (click)="Login()"block>Login</button>
