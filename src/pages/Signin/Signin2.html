@@ -1,0 +1,35 @@
+<ion-header>
+  <ion-navbar color="secondary">
+    <ion-title>学校专业信息</ion-title>
+  </ion-navbar>
+</ion-header>
+
+<ion-content padding>
+<ion-list>
+   <ion-item>
+    <ion-label fixed>省</ion-label>
+    <ion-input type="text" placeholder="" [(ngModel)]="sheng"></ion-input>
+  </ion-item>
+  <ion-item>
+    <ion-label fixed>市</ion-label>
+    <ion-input type="text" placeholder="" [(ngModel)]="shi"></ion-input>
+  </ion-item>
+<ion-item>
+    <ion-label fixed>学校</ion-label>
+    <ion-input type="text" placeholder="" [(ngModel)]="xuexiao"></ion-input>
+  </ion-item>
+</ion-list>
+<ion-searchbar (ionInput)="get($event)"  [showCancelButton]="shouldShowCancel">
+</ion-searchbar>
+ <ion-list radio-group [(ngModel)]="zhuanye">
+    <ion-list-header>
+    专业
+    </ion-list-header>
+    <ion-item *ngFor="let item of items">
+      <ion-label>{{ item }}</ion-label>
+      <ion-radio value="{{ item }}" ></ion-radio>
+    </ion-item>
+  </ion-list>
+  <button ion-button  color="secondary" (click)="Nextsign()"block>下一步</button>
+  
+</ion-content>

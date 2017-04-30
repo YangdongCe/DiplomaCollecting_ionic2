@@ -10,9 +10,9 @@ import { TabsPage } from '../pages/tabs/tabs';
 import { LoginDetail } from '../pages/login/login_detail'
 import { StatusBar } from '@ionic-native/status-bar';
 import { SplashScreen } from '@ionic-native/splash-screen';
-import { SigninPage } from '../pages/Signin/Signin'
-
-
+import { SigninPage } from '../pages/Signin/Signin';
+import { SigninPage2 } from '../pages/Signin/Signin2';
+ 
 @NgModule({
   declarations: [
     MyApp,
@@ -22,7 +22,8 @@ import { SigninPage } from '../pages/Signin/Signin'
     TabsPage,
     LoginPage,
     LoginDetail,
-    SigninPage
+    SigninPage,
+    SigninPage2
   ],
   imports: [
     BrowserModule,
@@ -37,7 +38,8 @@ import { SigninPage } from '../pages/Signin/Signin'
     TabsPage,
     LoginPage,
     LoginDetail,
-    SigninPage
+    SigninPage,
+    SigninPage2
   ],
   providers: [
     StatusBar,

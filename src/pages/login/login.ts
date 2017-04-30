@@ -3,7 +3,7 @@
  */
 import { Component } from '@angular/core';
 import { SigninPage } from '../Signin/Signin';
-import { NavController,NavParams } from 'ionic-angular';
+import { NavController } from 'ionic-angular';
 
 @Component({
   templateUrl: 'login.html'
