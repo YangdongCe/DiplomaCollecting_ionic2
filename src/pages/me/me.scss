@@ -1,3 +1,18 @@
 page-me {
+    .touxiang {
+            border-radius:50%;
+            clear: both;
+            display: block;
+            margin:auto;
+    }
+    .font_center {
+        text-align: center;
+    }
+    ion-card.cards-list-demo ion-card-header {
+        color: map-get($colors, primary);
+    }
+    .jiantou {
+        color: #DCDCDC;
+    }
 
 }
