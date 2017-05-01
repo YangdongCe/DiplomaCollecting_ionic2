@@ -13,6 +13,7 @@ import { SplashScreen } from '@ionic-native/splash-screen';
 import { SigninPage } from '../pages/Signin/Signin';
 import { SigninPage2 } from '../pages/Signin/Signin2';
 import { SelectedMePage }from '../pages/Selected/SelectedMe'; 
+import {ForgetPage} from'../pages/Forget/Forget';
 @NgModule({
   declarations: [
     MyApp,
@@ -24,7 +25,8 @@ import { SelectedMePage }from '../pages/Selected/SelectedMe';
     LoginDetail,
     SigninPage,
     SigninPage2,
-    SelectedMePage
+    SelectedMePage,
+    ForgetPage
   ],
   imports: [
     BrowserModule,
@@ -41,7 +43,8 @@ import { SelectedMePage }from '../pages/Selected/SelectedMe';
     LoginDetail,
     SigninPage,
     SigninPage2,
-    SelectedMePage
+    SelectedMePage,
+    ForgetPage
   ],
   providers: [
     StatusBar,

@@ -4,7 +4,7 @@
 import { Component } from '@angular/core';
 import { SigninPage } from '../Signin/Signin';
 import { NavController } from 'ionic-angular';
-
+import {ForgetPage } from '../Forget/Forget';
 @Component({
   templateUrl: 'login.html'
 })
@@ -20,5 +20,8 @@ export class LoginPage{
   }
   doSign(){
       this.navCtrl.push(SigninPage)
+  }
+  doForget(){
+      this.navCtrl.push(ForgetPage)
   }
 }
