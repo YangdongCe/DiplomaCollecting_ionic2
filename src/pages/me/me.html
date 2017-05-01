@@ -1,44 +1,59 @@
 <ion-header>
-  <ion-navbar color="secondary">
+  <ion-navbar class="font_center">
     <ion-title>
-      我
+      Me
     </ion-title>
   </ion-navbar>
 </ion-header>
 
 <ion-content >
-  <ion-list>
-    <ion-item>
-       <ion-avatar item-left>
-        <img src="../../assets/stats.png">
-      </ion-avatar>
-       <button  ion-item (click)="Selectedme()"><h1>yangdongce</h1>
-       </button> 
-    </ion-item>
-    <ion-item>
-        <ion-icon name="at" item-left></ion-icon>
-       <button  ion-item (click)="Selectedwho()"><h1>谁看过我</h1>
-       </button> 
-    </ion-item>
-    <ion-item>
-        <ion-icon name="shirt" item-left></ion-icon>
-       <button  ion-item (click)="Selectedstyle()"><h1>我的主题</h1>
-       </button> 
-    </ion-item>
-    <ion-item>
-        <ion-icon name="chatboxes" item-left></ion-icon>
-       <button  ion-item (click)="Selectedreply()"><h1>我的回复</h1>
-       </button>  
-    </ion-item>
-    <ion-item>
-        <ion-icon name="heart" item-left></ion-icon>
-       <button  ion-item (click)="Selectedlike()"><h1>我的收藏</h1>
-       </button> 
-    </ion-item>
-    <ion-item>
-        <ion-icon name="settings" item-left></ion-icon>
-       <button  ion-item (click)="Selectedchange()"><h1>设置</h1>
-       </button> 
-    </ion-item>
-  </ion-list>
+  <br>
+  <ion-item class="font_center">
+        <img class='touxiang' height="140" weight="140" src="assets/touxiang.jpg">
+        <br>
+        <h1>Ryanair</h1>
+  </ion-item>
+  <br>
+  <ion-card class="cards-list-demo"> 
+    <ion-list no-line>
+      
+      <ion-item>    
+        <button  ion-item (click)="Selectedwho()">
+          <ion-icon name="at" item-left></ion-icon>
+          谁看过我
+          <ion-icon name="md-arrow-dropright" item-right class="jiantou"></ion-icon>
+        </button> 
+      </ion-item>
+      <ion-item>
+        <button  ion-item (click)="Selectedstyle()">
+          <ion-icon name="shirt" item-left></ion-icon>
+          我的主题
+          <ion-icon name="md-arrow-dropright" item-right class="jiantou"></ion-icon>
+        </button> 
+      </ion-item>
+      <ion-item> 
+        <button  ion-item (click)="Selectedreply()">
+          <ion-icon name="chatboxes" item-left></ion-icon>
+          我的回复
+          <ion-icon name="md-arrow-dropright" item-right class="jiantou"></ion-icon>
+        </button>  
+      </ion-item>
+      <ion-item>
+        <button  ion-item (click)="Selectedlike()">
+          <ion-icon name="heart" item-left></ion-icon>
+          我的收藏
+          <ion-icon name="md-arrow-dropright" item-right class="jiantou"></ion-icon>
+        </button> 
+      </ion-item>
+      <ion-item>
+        <button  ion-item (click)="Selectedchange()">
+          <ion-icon name="settings" item-left ></ion-icon>
+          设置
+          <ion-icon name="md-arrow-dropright" item-right class="jiantou"></ion-icon>
+        </button> 
+
+      </ion-item>
+    </ion-list>
+
+  </ion-card>
 </ion-content>
