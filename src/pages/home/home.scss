@@ -3,6 +3,9 @@ page-home {
         text-align: center;
     }
     .body {
-        background-color: #DDDDDD;
+        background-color: #EEEEFF;
+    }
+    ion-card.cards-list-demo ion-card-header {
+        color: map-get($colors, primary);
     }
 }

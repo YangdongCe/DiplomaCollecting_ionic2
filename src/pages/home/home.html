@@ -1,11 +1,13 @@
 <ion-header>
-  <ion-navbar>
-    <ion-title>新闻</ion-title>
+  <ion-navbar class="font_center" color='rouhe'>
+    <ion-title>News</ion-title>
   </ion-navbar>
 </ion-header>
 
 <ion-content  padding-top class="body">
-  <ion-card>
+
+
+  <ion-card class="cards-list-demo">
     <img src="../../assets/new1.jpeg"/>
     <ion-card-content>
       <ion-card-title>
@@ -32,90 +34,17 @@
           <ion-icon name='text'></ion-icon></button>
       </ion-col>
     </ion-row>
+     <ion-list no-line>
+      <ion-item *ngFor="let item of items" (click)="view(item)">
+        <ion-thumbnail item-left>
+          <img src="{{ item.top_image }}"/>
+        </ion-thumbnail>
+          <h3>{{ item.title }}</h3>
+          <p>{{ item.digest }}</p>
+          <button ion-button clear item-right>View</button>
+        
+      </ion-item>
+    </ion-list>
   </ion-card>
- <ion-card>
-  <ion-list>
-    <ion-item>
-      <ion-thumbnail item-left>
-        <img src="../../assets/new1.jpeg"/>
-      </ion-thumbnail>
-      <h2>
-        2017年最新最全！这些职业资格证已经被国务院取消啦！不要再考了！
-      </h2>
-      <h3>
-        “一年之计在于春”，年头的时候大家都想为这一年做一些新的计划目标，例如考个资格证什么的！
-        但是要注意哦！这几年来，有些资格证已经被国家取消了，所以当你想考某个资格证的时候，先看
-        看这个资格证是否还考的必要！
-      </h3>
-    <button ion-button (click)="Newsclick()" clear item-right>查看详情</button>
-     <button ion-button clear small color="primary" icon-left>
-          <ion-icon name='heart'></ion-icon>
-        </button>
-       <ion-col text-center>
-        <button ion-button clear small color="primary" icon-left>
-          <ion-icon name='thumbs-up'></ion-icon>
-        </button>
-      </ion-col>
-      <ion-col text-right>
-        <button ion-button clear small color="primary" icon-left>
-          <ion-icon name='text'></ion-icon>
-        </button>
-      </ion-col>
-    </ion-item>
-    <ion-item>
-      <ion-thumbnail item-left>
-        <img src="../../assets/new1.jpeg"/>
-      </ion-thumbnail>
-      <h2>
-        2017年最新最全！这些职业资格证已经被国务院取消啦！不要再考了！
-      </h2>
-      <h3>
-        “一年之计在于春”，年头的时候大家都想为这一年做一些新的计划目标，例如考个资格证什么的！
-        但是要注意哦！这几年来，有些资格证已经被国家取消了，所以当你想考某个资格证的时候，先看
-        看这个资格证是否还考的必要！
-      </h3>
-    <button ion-button (click)="Newsclick()" clear item-right>查看详情</button>
-     <button ion-button clear small color="primary" icon-left>
-          <ion-icon name='heart'></ion-icon>
-        </button>
-       <ion-col text-center>
-        <button ion-button clear small color="primary" icon-left>
-          <ion-icon name='thumbs-up'></ion-icon>
-        </button>
-      </ion-col>
-      <ion-col text-right>
-        <button ion-button clear small color="primary" icon-left>
-          <ion-icon name='text'></ion-icon>
-        </button>
-      </ion-col>
-    </ion-item>
-    <ion-item>
-      <ion-thumbnail item-left>
-        <img src="../../assets/new1.jpeg"/>
-      </ion-thumbnail>
-      <h2>
-        2017年最新最全！这些职业资格证已经被国务院取消啦！不要再考了！
-      </h2>
-      <h3>
-        “一年之计在于春”，年头的时候大家都想为这一年做一些新的计划目标，例如考个资格证什么的！
-        但是要注意哦！这几年来，有些资格证已经被国家取消了，所以当你想考某个资格证的时候，先看
-        看这个资格证是否还考的必要！
-      </h3>
-    <button ion-button (click)="Newsclick()" clear item-right>查看详情</button>
-     <button ion-button clear small color="primary" icon-left>
-          <ion-icon name='heart'></ion-icon>
-        </button>
-       <ion-col text-center>
-        <button ion-button clear small color="primary" icon-left>
-          <ion-icon name='thumbs-up'></ion-icon>
-        </button>
-      </ion-col>
-      <ion-col text-right>
-        <button ion-button clear small color="primary" icon-left>
-          <ion-icon name='text'></ion-icon>
-        </button>
-      </ion-col>
-    </ion-item>
-  </ion-list>
-</ion-card>
+
 </ion-content>
