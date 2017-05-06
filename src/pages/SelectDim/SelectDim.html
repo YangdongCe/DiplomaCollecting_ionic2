@@ -1,9 +1,58 @@
 <ion-header>
-  <ion-navbar>
-    <ion-title>选择证书</ion-title>
+  <ion-navbar color="secondary">
+    <ion-title>证书添加
+    <ion-icon (click)="doAdd()" style="float:right" name="md-checkmark">&nbsp;&nbsp;</ion-icon>
+
+    </ion-title>
   </ion-navbar>
 </ion-header>
-
 <ion-content padding>
-  
+
+   <ion-list >
+    <ion-list-header>
+      必考
+    </ion-list-header>
+
+    <ion-item>
+      <ion-label>CET4</ion-label>
+      <ion-checkbox checked="true"></ion-checkbox>
+    </ion-item>
+
+    <ion-item>
+      <ion-label>计算机二级</ion-label>
+      <ion-checkbox color="dark" checked="true"></ion-checkbox>
+    </ion-item>
+  </ion-list>
+
+  <ion-list >
+    <ion-list-header>
+      推荐
+    </ion-list-header>
+
+    <ion-item>
+      <ion-label>雅思(IELTS)</ion-label>
+      <ion-checkbox value="cherry" ></ion-checkbox>
+    </ion-item>
+
+    <ion-item>
+      <ion-label>GRE</ion-label>
+      <ion-checkbox color="secondary"></ion-checkbox>
+    </ion-item>
+
+    <ion-item>
+      <ion-label>GMAT考试</ion-label>
+      <ion-checkbox color="danger" ></ion-checkbox>
+    </ion-item>
+
+    <ion-item>
+      <ion-label>物流师</ion-label>
+      <ion-checkbox color="dark"></ion-checkbox>
+    </ion-item>
+
+    <ion-item>
+      <ion-label>公共英语(1-4级)</ion-label>
+      <ion-checkbox ></ion-checkbox>
+    </ion-item>
+
+  </ion-list>
 </ion-content>

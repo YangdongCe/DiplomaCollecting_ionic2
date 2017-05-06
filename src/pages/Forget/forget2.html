@@ -1,0 +1,21 @@
+<ion-header>
+  <ion-navbar color="secondary">
+    <ion-title>
+     重置密码
+    </ion-title>
+  </ion-navbar>
+</ion-header>
+<ion-content padding>
+  <ion-list>
+<ion-item>
+    <ion-icon name="lock" item-left></ion-icon>
+    <ion-input type="password" placeholder="请设置密码" ></ion-input>
+  </ion-item>
+
+   <ion-item>
+       <ion-icon name="arrow-round-forward" item-left></ion-icon>
+    <ion-input type="password" placeholder="再输入密码" ></ion-input>
+  </ion-item>
+  </ion-list>
+   <button ion-button  color="secondary" (click)="Next()"block>确定</button>
+</ion-content>

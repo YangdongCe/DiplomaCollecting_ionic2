@@ -3,7 +3,6 @@ import { BrowserModule } from '@angular/platform-browser';
 import { IonicApp, IonicModule, IonicErrorHandler } from 'ionic-angular';
 import { MyApp } from './app.component';
 import { LoginPage } from '../pages/login/login';
-import { AboutPage } from '../pages/about/about';
 import { MePage } from '../pages/me/me';
 import { HomePage } from '../pages/home/home';
 import { TabsPage } from '../pages/tabs/tabs';
@@ -13,11 +12,13 @@ import { SplashScreen } from '@ionic-native/splash-screen';
 import { SigninPage } from '../pages/Signin/Signin';
 import { SigninPage2 } from '../pages/Signin/Signin2';
 import { SelectedMePage }from '../pages/Selected/SelectedMe'; 
-import {ForgetPage} from'../pages/Forget/Forget';
+import { ForgetPage } from'../pages/Forget/Forget';
+import { ForgetPage2 } from'../pages/Forget/forget2';
+import { MyDiploma } from '../pages/mydiploma/mydiploma';
+import { SelectDimPage } from'../pages/SelectDim/SelectDim'
 @NgModule({
   declarations: [
     MyApp,
-    AboutPage,
     MePage,
     HomePage,
     TabsPage,
@@ -26,7 +27,10 @@ import {ForgetPage} from'../pages/Forget/Forget';
     SigninPage,
     SigninPage2,
     SelectedMePage,
-    ForgetPage
+    ForgetPage,
+    ForgetPage2,
+    MyDiploma,
+    SelectDimPage,
   ],
   imports: [
     BrowserModule,
@@ -35,7 +39,6 @@ import {ForgetPage} from'../pages/Forget/Forget';
   bootstrap: [IonicApp],
   entryComponents: [
     MyApp,
-    AboutPage,
     MePage,
     HomePage,
     TabsPage,
@@ -44,7 +47,10 @@ import {ForgetPage} from'../pages/Forget/Forget';
     SigninPage,
     SigninPage2,
     SelectedMePage,
-    ForgetPage
+    ForgetPage,
+    ForgetPage2,
+    MyDiploma,
+    SelectDimPage,
   ],
   providers: [
     StatusBar,
