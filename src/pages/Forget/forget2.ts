@@ -1,14 +1,15 @@
 import { Component } from '@angular/core';
 import { NavController } from 'ionic-angular';
-
+import{HomePage} from'../home/home';
 @Component({
-  selector: 'page-home',
-  templateUrl: 'home.html'
+  templateUrl: 'forget2.html'
 })
-export class HomePage {
+export class ForgetPage2 {
 
   constructor(public navCtrl: NavController) {
 
   }
-
+  Next(){
+    this.navCtrl.push(HomePage)
+  }
 }
