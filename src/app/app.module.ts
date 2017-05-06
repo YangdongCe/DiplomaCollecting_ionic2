@@ -14,12 +14,9 @@ import { SigninPage } from '../pages/Signin/Signin';
 import { SigninPage2 } from '../pages/Signin/Signin2';
 import { SelectedMePage }from '../pages/Selected/SelectedMe'; 
 import { ForgetPage } from'../pages/Forget/Forget';
-<<<<<<< HEAD
 import { ForgetPage2 } from'../pages/Forget/forget2';
-=======
 import { MyDiploma } from '../pages/mydiploma/mydiploma';
 import { SelectDimPage } from'../pages/SelectDim/SelectDim'
->>>>>>> origin/master
 @NgModule({
   declarations: [
     MyApp,
@@ -33,12 +30,9 @@ import { SelectDimPage } from'../pages/SelectDim/SelectDim'
     SigninPage2,
     SelectedMePage,
     ForgetPage,
-<<<<<<< HEAD
-    ForgetPage2
-=======
+    ForgetPage2,
     MyDiploma,
     SelectDimPage,
->>>>>>> origin/master
   ],
   imports: [
     BrowserModule,
@@ -57,12 +51,9 @@ import { SelectDimPage } from'../pages/SelectDim/SelectDim'
     SigninPage2,
     SelectedMePage,
     ForgetPage,
-<<<<<<< HEAD
-    ForgetPage2
-=======
+    ForgetPage2,
     MyDiploma,
     SelectDimPage,
->>>>>>> origin/master
   ],
   providers: [
     StatusBar,
