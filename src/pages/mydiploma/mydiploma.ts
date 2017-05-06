@@ -6,7 +6,9 @@ import { NavController } from 'ionic-angular';
   templateUrl: 'mydiploma.html'
 })
 export class MyDiploma {
-
+zhengshu: string = "weikao";
+qingchu: string = "md-close-circle";
+wancheng: string = "ios-ribbon";
   constructor(public navCtrl: NavController) {
 
   }

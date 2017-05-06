@@ -2,10 +2,86 @@
   <ion-navbar class='font_center'>
     <ion-title>MyDiploma</ion-title>
   </ion-navbar>
+  <ion-toolbar no-border-top>
+    <ion-segment [(ngModel)]="zhengshu" color="rouhe">
+      <ion-segment-button value="weikao">
+        <ion-icon name="ios-mail-open"></ion-icon>
+      </ion-segment-button>
+      <ion-segment-button value="yikao">
+        <ion-icon name="ios-school"></ion-icon>
+        <h2>未考</h2>
+      </ion-segment-button>
+    </ion-segment>
+  </ion-toolbar>
 </ion-header>
 
-<ion-content padding>
-  <ion-card>
+<ion-content padding >
+  <div [ngSwitch]='zhengshu'>
+    <div *ngSwitchCase="'weikao'">
+
+      <ion-card>
+        <ion-card-content >
+          <ion-card-title>
+            大学英语六级
+            <ion-icon [name]="qingchu" (click)='doDel()'></ion-icon>
+          </ion-card-title>
+          <ion-note>考试时间: 2017-06-27</ion-note>
+        </ion-card-content>
+      </ion-card>
+
+      <ion-card>
+        <ion-card-content >
+          <ion-card-title>
+            商务英语考试
+            <ion-icon [name]="qingchu" (click)='doDel()'></ion-icon>
+          </ion-card-title>
+          <ion-note>报名时间: 2017-06-20</ion-note>
+        </ion-card-content>
+      </ion-card>
+
+      <ion-card>
+        <ion-card-content >
+          <ion-card-title>
+            托福
+            <ion-icon [name]="qingchu" (click)='doDel()'></ion-icon>
+          </ion-card-title>
+          <ion-note>报名时间: 2017-05-17</ion-note>
+        </ion-card-content>
+      </ion-card>
+
+    </div>
+    <div *ngSwitchCase="'yikao'">
+
+      <ion-card style="background:#CC6666">
+
+        <ion-card-content >
+          <ion-card-title>
+            驾驶证  
+            <ion-icon [name]="wancheng"></ion-icon>
+          </ion-card-title>
+        </ion-card-content>
+      </ion-card>
+
+      <ion-card style="background:#CC6666">
+        <ion-card-content >
+          <ion-card-title>
+            普通话等级考试
+            <ion-icon [name]="wancheng"></ion-icon>
+          </ion-card-title>
+        </ion-card-content>
+      </ion-card>
+
+      <ion-card style="background:#CC6666">
+        <ion-card-content >
+          <ion-card-title>
+            全国计算机二级考试
+            <ion-icon [name]="wancheng"></ion-icon>
+          </ion-card-title>
+        </ion-card-content>
+      </ion-card>
+
+    </div>
+  </div>
     
-  </ion-card>
+ 
 </ion-content>
