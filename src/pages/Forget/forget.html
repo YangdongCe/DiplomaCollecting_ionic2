@@ -7,10 +7,10 @@
 </ion-header>
 <ion-content padding>
     <ion-list>
-   <p>  请输入注册时使用的手机号，验证手机后即可修改密码。</p>
+   <p> 请输入注册时填写的邮箱地址</p>
    <ion-item>
-    <ion-icon name="call" item-left ></ion-icon>
-    <ion-input type="tel" placeholder="请输入手机号" [(ngModel)]="myphone"></ion-input>
+    <ion-icon name="mail" item-left ></ion-icon>
+    <ion-input type="email" placeholder="请输入您的注册邮箱" ></ion-input>
   </ion-item>
 </ion-list>
 <button ion-button  color="secondary" (click)="Nextsign()"block>下一步</button>
