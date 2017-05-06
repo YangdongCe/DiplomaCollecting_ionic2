@@ -7,7 +7,8 @@ import { NavController } from 'ionic-angular';
 export class SelectDimPage {
 
   constructor(public navCtrl: NavController) {
-
+    
   }
 
 }
+ 
