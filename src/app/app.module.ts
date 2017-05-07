@@ -6,6 +6,7 @@ import { MyApp } from './app.component';
 import { LoginPage } from '../pages/login/login';
 import { MePage } from '../pages/me/me';
 import { HomePage } from '../pages/home/home';
+import { Searchdiploma } from '../pages/home/searchdiploma';
 import { TabsPage } from '../pages/tabs/tabs';
 import { LoginDetail } from '../pages/login/login_detail'
 import { StatusBar } from '@ionic-native/status-bar';
@@ -32,6 +33,7 @@ import { SelectDimPage } from'../pages/SelectDim/SelectDim'
     ForgetPage2,
     MyDiploma,
     SelectDimPage,
+    Searchdiploma
   ],
   imports: [
     BrowserModule,
@@ -53,6 +55,7 @@ import { SelectDimPage } from'../pages/SelectDim/SelectDim'
     ForgetPage2,
     MyDiploma,
     SelectDimPage,
+    Searchdiploma
   ],
   providers: [
     StatusBar,

@@ -1,12 +1,15 @@
 import { Component } from '@angular/core';
 import { NavController } from 'ionic-angular';
 import { HomeservePage } from '../homeserve/homeserve';
+import { Searchdiploma } from '../home/searchdiploma';
 import { Newlistservices } from '../../services/newlistservices'
 @Component({
   selector: 'page-home',
   templateUrl: 'home.html'
 })
 export class HomePage {
+   searchQuery: string = '';
+   zhengshu:string;
    items = [];
    topic:string;
    description:string;
@@ -14,7 +17,10 @@ export class HomePage {
    photo:URL;
    
   constructor(public navCtrl: NavController,private newlist: Newlistservices) {
+}
 
+  getItems() {
+    this.navCtrl.push(Searchdiploma);
   }
   ngOnInit(){
     this.getPost();
