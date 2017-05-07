@@ -6,6 +6,7 @@ import { MyApp } from './app.component';
 import { LoginPage } from '../pages/login/login';
 import { MePage } from '../pages/me/me';
 import { HomePage } from '../pages/home/home';
+import { Searchdiploma } from '../pages/home/searchdiploma';
 import { TabsPage } from '../pages/tabs/tabs';
 import { LoginDetail } from '../pages/login/login_detail'
 import { StatusBar } from '@ionic-native/status-bar';
@@ -37,7 +38,8 @@ import { Mehelp} from'../pages/me/me_help';
     SelectDimPage,
     Mechange,
     Memima,
-    Mehelp
+    Mehelp,
+    Searchdiploma
   ],
   imports: [
     BrowserModule,
@@ -61,7 +63,8 @@ import { Mehelp} from'../pages/me/me_help';
     SelectDimPage,
     Mechange,
     Memima,
-    Mehelp
+    Mehelp,
+    Searchdiploma
   ],
   providers: [
     StatusBar,

@@ -12,5 +12,7 @@ wancheng: string = "ios-ribbon";
   constructor(public navCtrl: NavController) {
 
   }
-
+  view(data){
+    console.log(data);
+  }
 }
