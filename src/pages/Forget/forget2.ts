@@ -1,6 +1,6 @@
 import { Component } from '@angular/core';
 import { NavController } from 'ionic-angular';
-import{HomePage} from'../home/home';
+import{TabsPage} from'../tabs/tabs';
 @Component({
   templateUrl: 'forget2.html'
 })
@@ -10,6 +10,6 @@ export class ForgetPage2 {
 
   }
   Next(){
-    this.navCtrl.push(HomePage)
+    this.navCtrl.push(TabsPage)
   }
 }
