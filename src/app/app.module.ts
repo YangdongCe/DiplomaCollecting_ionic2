@@ -16,7 +16,10 @@ import { SelectedMePage }from '../pages/Selected/SelectedMe';
 import { ForgetPage } from'../pages/Forget/Forget';
 import { ForgetPage2 } from'../pages/Forget/forget2';
 import { MyDiploma } from '../pages/mydiploma/mydiploma';
-import { SelectDimPage } from'../pages/SelectDim/SelectDim'
+import { SelectDimPage } from'../pages/SelectDim/SelectDim';
+import { Mechange } from'../pages/me/me_change';
+import { Memima } from'../pages/me/me_mima';
+import { Mehelp} from'../pages/me/me_help';
 @NgModule({
   declarations: [
     MyApp,
@@ -32,6 +35,9 @@ import { SelectDimPage } from'../pages/SelectDim/SelectDim'
     ForgetPage2,
     MyDiploma,
     SelectDimPage,
+    Mechange,
+    Memima,
+    Mehelp
   ],
   imports: [
     BrowserModule,
@@ -53,6 +59,9 @@ import { SelectDimPage } from'../pages/SelectDim/SelectDim'
     ForgetPage2,
     MyDiploma,
     SelectDimPage,
+    Mechange,
+    Memima,
+    Mehelp
   ],
   providers: [
     StatusBar,

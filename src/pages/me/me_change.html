@@ -1,0 +1,26 @@
+<ion-header>
+  <ion-navbar class="font_center" >
+    <ion-title>设置</ion-title>
+  </ion-navbar>
+</ion-header>
+<ion-content  padding>
+ <ion-card>
+  <ion-list>
+      <ion-item>    
+        <button  ion-item (click)="doset()">
+        账号设置    
+        </button> 
+      </ion-item>
+  </ion-list>
+ </ion-card>
+ <ion-card>
+   <ion-list no-lines>
+      <ion-item>    
+        <button  ion-item (click)="dohelp()">  帮助与反馈  </button> 
+      </ion-item>
+      <ion-item>    
+        <button  ion-item (click)="doshare()" > 推荐给好友 </button> 
+      </ion-item>
+  </ion-list>
+ </ion-card>
+</ion-content>

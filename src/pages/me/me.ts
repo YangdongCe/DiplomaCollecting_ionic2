@@ -1,6 +1,7 @@
 import { Component } from '@angular/core';
 import { NavController,NavParams } from 'ionic-angular';
 import { SelectedMePage }from '../Selected/SelectedMe';
+import { Mechange }  from'../me/me_change';
 @Component({
   selector: 'page-me',
   templateUrl: 'me.html'
@@ -27,6 +28,7 @@ Selectedlike(){
 
 }
 Selectedchange(){
+  this.navCtrl.push(Mechange)
 
 }
 }
