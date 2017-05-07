@@ -1,25 +1,22 @@
 <ion-header>
-  <ion-navbar class='font_center'>
-    <ion-title>MyDiploma</ion-title>
-  </ion-navbar>
-  <ion-toolbar no-border-top>
-    <ion-segment [(ngModel)]="zhengshu" color="rouhe">
-      <ion-segment-button value="weikao">
+  
+  <ion-toolbar no-border-top color="rouhe">
+    <ion-segment [(ngModel)]="zhengshu" color="light">
+      <ion-segment-button value="weikao" >
         <ion-icon name="ios-mail-open"></ion-icon>
       </ion-segment-button>
-      <ion-segment-button value="yikao">
+      <ion-segment-button value="yikao" >
         <ion-icon name="ios-school"></ion-icon>
-        <h2>未考</h2>
       </ion-segment-button>
     </ion-segment>
   </ion-toolbar>
 </ion-header>
 
-<ion-content padding >
+<ion-content padding class="background">
   <div [ngSwitch]='zhengshu'>
     <div *ngSwitchCase="'weikao'">
 
-      <ion-card>
+      <ion-card (click)="view('ydc')">
         <ion-card-content >
           <ion-card-title>
             大学英语六级
@@ -49,36 +46,49 @@
         </ion-card-content>
       </ion-card>
 
+       <ion-card style="background:rgba(102,153,204,0.8)" (click)='doAdd_yikao()' class="add" >
+         
+            <ion-icon name="md-add-circle" ></ion-icon>
+       </ion-card>
+
     </div>
     <div *ngSwitchCase="'yikao'">
 
-      <ion-card style="background:#CC6666">
+      <ion-card style="background:rgba(111,96,170,0.8)">
 
         <ion-card-content >
           <ion-card-title>
             驾驶证  
             <ion-icon [name]="wancheng"></ion-icon>
           </ion-card-title>
+          <ion-note>已拥有</ion-note>
         </ion-card-content>
       </ion-card>
 
-      <ion-card style="background:#CC6666">
+      <ion-card style="background:rgba(111,96,170,0.8)">
         <ion-card-content >
           <ion-card-title>
             普通话等级考试
             <ion-icon [name]="wancheng"></ion-icon>
           </ion-card-title>
+           <ion-note>已拥有</ion-note>
         </ion-card-content>
       </ion-card>
 
-      <ion-card style="background:#CC6666">
+      <ion-card style="background:rgba(111,96,170,0.8)">
         <ion-card-content >
           <ion-card-title>
             全国计算机二级考试
             <ion-icon [name]="wancheng"></ion-icon>
           </ion-card-title>
+           <ion-note>已拥有</ion-note>
         </ion-card-content>
       </ion-card>
+
+      <ion-card style="background:rgba(111,96,170,0.8)" (click)='doAdd_yikao()' class="add" >
+         
+            <ion-icon name="md-add-circle" ></ion-icon>
+       </ion-card>
 
     </div>
   </div>
