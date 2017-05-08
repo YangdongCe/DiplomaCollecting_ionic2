@@ -11,5 +11,13 @@ export class Searchdiploma {
 
   }
 
-  
+  Searchzhiye(){
+
+  }
+  Searchzhuanye(){
+
+  }
+  Searchzhengshu(){
+    
+  }
 }

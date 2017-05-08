@@ -1,11 +1,22 @@
-<ion-header color="rouhe">
-  Search ways
+<ion-header>
+  <ion-navbar color="rouhe">
+    <ion-title > 
+     Search Ways
+    </ion-title>
+  </ion-navbar>
 </ion-header>
 
 <ion-content padding>
-    <ion-list>
-    <ion-item *ngFor="let item of items">
-      {{ item }}
-    </ion-item>
-  </ion-list>
-</ion-content>
+   <ion-list inset>
+  <button ion-item  (click)="Searchzhiye()">
+    职业搜索
+  </button> 
+  <button ion-item  (click)="Searchzhuanye()">
+    专业搜索
+  </button> 
+  <button ion-item  (click)="Searchzhengshu()">
+    证书搜索
+  </button> 
+</ion-list>
+  
+   </ion-content>
