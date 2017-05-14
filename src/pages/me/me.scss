@@ -11,4 +11,7 @@ page-me {
     ion-card.cards-list-demo ion-card-header {
         color: map-get($colors, primary);
     }
+    .back{
+        background-image: url('../../assets/back_me.jpg');
+    }
 }
