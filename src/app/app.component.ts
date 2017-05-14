@@ -4,10 +4,10 @@ import { StatusBar } from '@ionic-native/status-bar';
 import { SplashScreen } from '@ionic-native/splash-screen';
 import { Newlistservices } from '../services/newlistservices';
 import { LoginPage } from '../pages/login/login';
-
+import { GetDipservices } from '../services/getallDipservices';
 @Component({
   templateUrl: 'app.html',
-  providers: [ Newlistservices ]
+  providers: [ Newlistservices, GetDipservices ]
 })
 export class MyApp {
   rootPage:any = LoginPage;
