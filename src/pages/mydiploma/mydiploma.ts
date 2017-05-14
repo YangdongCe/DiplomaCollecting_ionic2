@@ -1,6 +1,6 @@
 import { Component } from '@angular/core';
 import { NavController } from 'ionic-angular';
-import { SearchsPage } from '../searchs/search'
+
 @Component({
     selector: 'page-mydiploma',
   templateUrl: 'mydiploma.html'
@@ -14,8 +14,5 @@ wancheng: string = "ios-ribbon";
   }
   view(data){
     console.log(data);
-  }
-  doAdd_yikao(){
-    this.navCtrl.push(SearchsPage);
   }
 }

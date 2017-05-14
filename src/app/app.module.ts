@@ -21,8 +21,6 @@ import { SelectDimPage } from'../pages/SelectDim/SelectDim';
 import { Mechange } from'../pages/me/me_change';
 import { Memima } from'../pages/me/me_mima';
 import { Mehelp} from'../pages/me/me_help';
-import { SearchsPage } from '../pages/searchs/search';
-import { DipDetailPage } from '../pages/diploma_detail/diploma_detail'
 @NgModule({
   declarations: [
     MyApp,
@@ -41,9 +39,7 @@ import { DipDetailPage } from '../pages/diploma_detail/diploma_detail'
     Mechange,
     Memima,
     Mehelp,
-    Searchdiploma,
-    SearchsPage,
-    DipDetailPage
+    Searchdiploma
   ],
   imports: [
     BrowserModule,
@@ -68,9 +64,7 @@ import { DipDetailPage } from '../pages/diploma_detail/diploma_detail'
     Mechange,
     Memima,
     Mehelp,
-    Searchdiploma,
-    SearchsPage,
-    DipDetailPage
+    Searchdiploma
   ],
   providers: [
     StatusBar,
