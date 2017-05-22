@@ -1,6 +1,7 @@
 import { Component } from '@angular/core';
 import { NavController } from 'ionic-angular';
 import { GetDipservices } from'../../services/getallDipservices'
+import { DipDetailPage } from'../diploma_detail/diploma_detail'
 @Component({
     selector: 'page-search',
   templateUrl: 'search.html'
@@ -12,7 +13,6 @@ export class SearchsPage {
   constructor(public navCtrl: NavController, private getallDip: GetDipservices ) {
       this.myInput='';
       this.getPost();
-      
   }
   ngOnInit(){
       this.initializeItems();
@@ -26,6 +26,9 @@ export class SearchsPage {
   }
   view(item){
     console.log(item);
+    this.navCtrl.push(DipDetailPage,{
+      item:item
+    })
   }
   initializeItems() {
     this.items=this.datas;
