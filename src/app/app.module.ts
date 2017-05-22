@@ -23,6 +23,7 @@ import { Memima } from'../pages/me/me_mima';
 import { Mehelp} from'../pages/me/me_help';
 import { SearchsPage } from '../pages/searchs/search';
 import { DipDetailPage } from '../pages/diploma_detail/diploma_detail'
+import { NewsPage } from '../pages/newspage/newspage'
 @NgModule({
   declarations: [
     MyApp,
@@ -43,7 +44,8 @@ import { DipDetailPage } from '../pages/diploma_detail/diploma_detail'
     Mehelp,
     Searchdiploma,
     SearchsPage,
-    DipDetailPage
+    DipDetailPage,
+    NewsPage
   ],
   imports: [
     BrowserModule,
@@ -70,7 +72,9 @@ import { DipDetailPage } from '../pages/diploma_detail/diploma_detail'
     Mehelp,
     Searchdiploma,
     SearchsPage,
-    DipDetailPage
+    DipDetailPage,
+    NewsPage
+
   ],
   providers: [
     StatusBar,

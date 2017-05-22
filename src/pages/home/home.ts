@@ -3,6 +3,7 @@ import { NavController } from 'ionic-angular';
 import { HomeservePage } from '../homeserve/homeserve';
 import { Searchdiploma } from '../home/searchdiploma';
 import { Newlistservices } from '../../services/newlistservices'
+import { NewsPage } from '../newspage/newspage'
 @Component({
   selector: 'page-home',
   templateUrl: 'home.html'
@@ -32,7 +33,9 @@ export class HomePage {
     });
   }
   view(item){
-    console.log(item.title);
+    this.navCtrl.push(NewsPage,{
+      item:item
+    });
   }
 
 }

@@ -1,0 +1,19 @@
+<ion-header>
+  <ion-navbar color='rouhe'>
+    <ion-title>新闻</ion-title>
+  </ion-navbar>
+</ion-header>
+<ion-content  padding class="body">
+    <ion-card>
+    <img src="{{ item.top_image }}">
+    
+    
+    </ion-card>
+    <div class="font_center">
+        <h1>{{item.title}}</h1>
+        <br>
+    </div>
+     <ion-item text-wrap>
+         {{item.content}}
+     </ion-item>
+</ion-content>
