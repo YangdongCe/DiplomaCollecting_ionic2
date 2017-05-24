@@ -8,10 +8,10 @@ import { GetDipdetailservices } from '../../services/getdipdetailservices'
 export class DipDetailPage {
 name:string='';
 item:any;
-introduce:string='';
-time:string='';
-time2:string="";
-time3:string=''; 
+introduce:string=' ';
+time:string='........';
+time2:string="........";
+time3:string='........'; 
   constructor(public navCtrl: NavController, public navparams: NavParams, private getdip: GetDipdetailservices) {
      this.name = navparams.get('name');
      
