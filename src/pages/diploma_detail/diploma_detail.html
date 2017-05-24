@@ -7,18 +7,22 @@
  <ion-card>
   <ion-card-content class="font_center">
     <ion-card-title>
-      注册会计师
+      {{name}}
     </ion-card-title>
     <ion-chip>
     <ion-icon name="ios-copy-outline" color='danger'></ion-icon>
-    <ion-label style=" color: #fff;">报名时间: 3月5号-3月10号 </ion-label>
+    <ion-label style=" color: #fff;">报名时间: {{time2}}</ion-label>
   </ion-chip>
   <br>
   <ion-chip #chip1>
     <ion-icon name="ios-calendar-outline" color='primary'></ion-icon>
-    <ion-label style=" color: #fff;">考试时间: 4月5号-4月6号 </ion-label>
+    <ion-label style=" color: #fff;">考试时间:  {{time}}</ion-label>
   </ion-chip>
-  
+  <br>
+  <ion-chip>
+    <ion-icon name="ios-mail-open-outline" color='nuanse'></ion-icon>
+    <ion-label style=" color: #fff;">成绩时间: {{time3}}</ion-label>
+  </ion-chip>
   </ion-card-content>
  </ion-card>
  
@@ -26,7 +30,7 @@
  <ion-card>
     <ion-card-content style=" color: #fff;">
         <p style=" color: #fff;">
-        注册会计师考试（也称CPA考试）是根据《中华人民共和国注册会计师法》设立的职业资格考试，是目前取得中国注册会计师执业资格的必备条件，中国注册会计师考试于1991年首次举办。中国注册会计师考试于2006年首次在欧洲地区开设考场。\n
+        {{ introduce }}
         </p>
      </ion-card-content>
  </ion-card>

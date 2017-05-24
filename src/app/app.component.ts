@@ -5,9 +5,10 @@ import { SplashScreen } from '@ionic-native/splash-screen';
 import { Newlistservices } from '../services/newlistservices';
 import { LoginPage } from '../pages/login/login';
 import { GetDipservices } from '../services/getallDipservices';
+import { GetDipdetailservices } from '../services/getdipdetailservices'
 @Component({
   templateUrl: 'app.html',
-  providers: [ Newlistservices, GetDipservices ]
+  providers: [ Newlistservices, GetDipservices, GetDipdetailservices ]
 })
 export class MyApp {
   rootPage:any = LoginPage;
