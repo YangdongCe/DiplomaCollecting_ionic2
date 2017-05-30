@@ -23,7 +23,9 @@ import { Memima } from'../pages/me/me_mima';
 import { Mehelp} from'../pages/me/me_help';
 import { SearchsPage } from '../pages/searchs/search';
 import { DipDetailPage } from '../pages/diploma_detail/diploma_detail'
-import { NewsPage } from '../pages/newspage/newspage'
+import { NewsPage } from '../pages/newspage/newspage';
+import { CommunitPage } from '../pages/community/community';
+import { CommunitDetailPage } from '../pages/communitydetail/communitydetail';
 @NgModule({
   declarations: [
     MyApp,
@@ -45,7 +47,9 @@ import { NewsPage } from '../pages/newspage/newspage'
     Searchdiploma,
     SearchsPage,
     DipDetailPage,
-    NewsPage
+    NewsPage,
+    CommunitPage,
+    CommunitDetailPage
   ],
   imports: [
     BrowserModule,
@@ -74,8 +78,9 @@ import { NewsPage } from '../pages/newspage/newspage'
     Searchdiploma,
     SearchsPage,
     DipDetailPage,
-    NewsPage
-
+    NewsPage,
+    CommunitPage,
+    CommunitDetailPage
   ],
   providers: [
     StatusBar,

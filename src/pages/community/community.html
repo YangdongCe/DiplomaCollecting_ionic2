@@ -1,0 +1,27 @@
+<ion-header>
+  <ion-navbar class="font_center" color="rouhe">
+    <ion-title>论坛</ion-title>
+  </ion-navbar>
+</ion-header>
+
+<ion-content padding-top>
+    <ion-searchbar class="title" (click)="getItems()"></ion-searchbar>
+    <ion-card>
+        <ion-list>
+            <button ion-item (click)='view(item)' *ngFor="let item of items">
+            <ion-item>
+            <ion-avatar item-left>
+            <img src="{{item.image}}">
+            </ion-avatar>
+            <h2>{{item.name}}<ion-note style="float:right">{{item.time}}</ion-note></h2>
+            
+            </ion-item>
+            <ion-item>
+            <h2>{{item.title}}</h2>
+            <ion-note>{{item.digest}}</ion-note>
+            </ion-item>
+            <hr>
+            </button>
+        </ion-list>
+    </ion-card>
+</ion-content>

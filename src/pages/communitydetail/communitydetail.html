@@ -1,0 +1,62 @@
+<ion-header>
+  <ion-navbar class="font_center" color="rouhe">
+  </ion-navbar>
+</ion-header>
+<ion-content>
+    <ion-card>
+        <ion-card-header>
+            <ion-item>
+            <ion-avatar item-left>
+            <img src="{{item.image}}">
+            </ion-avatar>
+            <h2>{{item.name}}<ion-note style="float:right">{{item.time}}</ion-note></h2>
+            </ion-item>
+        </ion-card-header>
+        <ion-card-content>
+            <ion-card-title>
+                {{item.title}}
+            </ion-card-title>
+            <p>
+            Images often vary in size, so it is important that they adopt a consistent style throughout your app. 
+            Images can easily be added to cards. Adding an image to a card will give the image a constant width, 
+            and a variable height. Lists, headers, and other card components can easily be combined with image cards. 
+            To add an image to a card, use the following markup:
+            </p>
+        </ion-card-content>
+        <ion-row no-padding>
+            <ion-col>
+                <button ion-button clear color="primary" icon-left>
+                <ion-icon name='heart'></ion-icon></button>
+            </ion-col>
+            <ion-col text-right>
+                <button ion-button clear color="primary" icon-left>
+                <ion-icon name='thumbs-up'></ion-icon></button>
+            </ion-col>
+        </ion-row>
+        <ion-list>
+            <ion-item>
+                <ion-avatar item-left>
+                <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTkFpc_19VePPL2asuu7RRK7pwP_LzfXGg8mxhU1BTW44W0pJDNlg">
+                </ion-avatar>
+                <h2>Cher</h2>
+                <p>Ugh. As if.</p>
+            </ion-item>
+            <ion-item>
+                <ion-avatar item-left>
+                <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTsbqB4T2zIFVksbNDAOZXSTWvu7skUTZEdVrAeI1QyF-YpWhHPHQ">
+                </ion-avatar>
+                <h2>Ryanair</h2>
+                <p>好棒！</p>
+            </ion-item>
+        </ion-list>
+    </ion-card>
+</ion-content>
+<ion-footer>
+<ion-toolbar keyboard-attach>
+        <ion-item>
+            <ion-label fixed>Username</ion-label>
+            <ion-input type="text" value=""></ion-input>
+        </ion-item>
+        <button ion-button round color="rouhe" small>提交</button>
+</ion-toolbar>
+</ion-footer>

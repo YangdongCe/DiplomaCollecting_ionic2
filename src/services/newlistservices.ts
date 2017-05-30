@@ -8,7 +8,7 @@ export class Newlistservices{
   baseUrl: String;
   constructor(http:Http){
     this.http = http;
-    this.baseUrl = 'http://api.dagoogle.cn/news/get-news?tableNum=1&pagesize=3';
+    this.baseUrl = 'http://api.dagoogle.cn/news/get-news?tableNum=8&pagesize=3';
   }
 
   getPost(){
