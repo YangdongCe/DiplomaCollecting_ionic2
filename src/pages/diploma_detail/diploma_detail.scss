@@ -1,6 +1,6 @@
 page-dipdetail {
     .back{
-        background-image: url('../../assets/back3.jpg');
+        background: "light";
     }
     .font_center {
         text-align: center;
@@ -9,26 +9,26 @@ page-dipdetail {
         text-align: center;
     }
     .card {
-        background: rgba(0,0,0,0.5);
+        background:lightgrey;
         border-radius: 5px;
         box-shadow: none;
         
     }
     .card-title {
-        color: #fff;
+        color: black;
     }
     .lable{
-        color: #fff;
+        color: black;
     }
     .card-content>.p{
-        color: #fff;
+        color:black;
     }
     .anjian{
          border-radius: 5px;
          box-shadow: none;
          width: 94%;
          align-self: center;
-         background-color: rgba(250,0,0,0.5);
+         background-color:"rouhe";
     }
     .chip{
         float: left;
