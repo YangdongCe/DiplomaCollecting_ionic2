@@ -1,7 +1,7 @@
 <ion-content padding padding-top overflow-scroll="false">
   <img src="assets/stats.png">
   <login-in *ngIf="loginshow"></login-in>
-  <button *ngIf="!loginshow" ion-button color="rouhe" (click)="doLogin()" block>登录</button>
+  <button *ngIf="!loginshow" ion-button color="rouhe" (click)="doLogin()" block style="box-shadow: none;">登录</button>
   <button  ion-button color="rouhe" style="float:left" small clear (click)="doForget()" >忘记密码?</button>
   <button ion-button color="rouhe" style="float:right" clear small (click)="doSign()">注册</button>
 </ion-content>
