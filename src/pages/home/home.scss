@@ -3,11 +3,15 @@ page-home {
         text-align: center;
     }
     .body {
-        background-color: #EEEEFF;
+        background-color: #FFFAF4;
     }
        
     ion-card.cards-list-demo ion-card-header {
         color: map-get($colors, primary);
+    }
+    .content ion-card-content{
+
+background-color: #FFC78E;
     }
     
 }

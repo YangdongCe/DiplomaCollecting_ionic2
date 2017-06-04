@@ -7,12 +7,25 @@
     
     <ion-card>
             <div padding class="font_center">
-                  {{item.title}}
-               
+                  {{item.title}}  
             </div>
             <ion-note style="float:right;">{{item.source}}&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</ion-note>
     
         <ion-card-content  [innerHTML]="html" style="font-size:17px">
         </ion-card-content>
+         <ion-row no-padding>
+      <ion-col text-left>
+        <button ion-button clear  color="primary" icon-left>
+          <ion-icon name='heart'></ion-icon></button>
+      </ion-col>
+      <ion-col text-center>
+        <button ion-button clear  color="primary" icon-left>
+          <ion-icon name='thumbs-up'></ion-icon></button>
+      </ion-col>
+      <ion-col text-right>
+        <button ion-button clear  color="primary" icon-left>
+          <ion-icon name='text'></ion-icon></button>
+      </ion-col>
+    </ion-row> 
     </ion-card>
 </ion-content>

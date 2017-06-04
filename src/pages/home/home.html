@@ -1,39 +1,39 @@
-<ion-header>
-  <ion-navbar color='rouhe' class="font_center">
-    <ion-title>
-      News
-    </ion-title>
-  </ion-navbar>
+<ion-header >
+  
+   <ion-searchbar   class="title" (click)="getItems()" ></ion-searchbar>
+  
 </ion-header>
 
 <ion-content  padding-top class="body">
+      <ion-item>  
+           <ion-card class="content">  
+      <ion-item>  
+        <ion-avatar item-left>  
+          <img src="../../assets/touxiang.jpg" alt="头像">  
+        </ion-avatar>  
+        <h2>Ryanair</h2>  
+      
+      
+      </ion-item>  
+     
+      <ion-card-content  >  
+        <ion-list>
+          <ion-item>
+            <h3>今天&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;复习六级词汇</h3>  
+          </ion-item>
+        </ion-list>
+        <ion-list>
+          <ion-item>
+            <h3>6月27日&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;六级考试</h3>  
+          </ion-item>
+        </ion-list>
+      </ion-card-content>  
+       
+    </ion-card>  
+   </ion-item>
 
-  <ion-searchbar class="title" (click)="getItems()"></ion-searchbar>
+
   <ion-card class="cards-list-demo">
-    <img src="../../assets/new1.jpeg"/>
-    <ion-card-content>
-      <ion-card-title>
-        {{newfist.title}}
-      </ion-card-title>
-      <p>
-       {{newfist.content}}
-      </p>
-    </ion-card-content>
-    <button ion-button (click)="Newsclick(newfist)" clear item-right>查看详情</button>
-    <ion-row no-padding>
-      <ion-col>
-        <button ion-button clear small color="primary" icon-left>
-          <ion-icon name='heart'></ion-icon></button>
-      </ion-col>
-      <ion-col text-center>
-        <button ion-button clear small color="primary" icon-left>
-          <ion-icon name='thumbs-up'></ion-icon></button>
-      </ion-col>
-      <ion-col text-right>
-        <button ion-button clear small color="primary" icon-left>
-          <ion-icon name='text'></ion-icon></button>
-      </ion-col>
-    </ion-row>
      <ion-list no-line>
       <ion-item *ngFor="let item of items" (click)="view(item)">
         <ion-thumbnail item-left>
@@ -41,10 +41,8 @@
         </ion-thumbnail>
           <h3>{{ item.title }}</h3>
           <p>{{ item.digest }}</p>
-          <button ion-button clear item-right>View</button>
-        
+          <button ion-button clear item-right >View</button>
       </ion-item>
     </ion-list>
   </ion-card>
-
 </ion-content>
