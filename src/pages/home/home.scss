@@ -9,7 +9,7 @@ page-home {
     ion-card.cards-list-demo ion-card-header {
         color: map-get($colors, primary);
     }
-    .content ion-card-content{
+    .yanse{
 
         background-color: #408db8;
     }
@@ -18,4 +18,12 @@ page-home {
         border-radius: 20px;
     }
     
+    .tuijian{
+             font-size: 20px;
+             color:#408db8;
+         }
+    .bookname{
+        color:gray;
+        font-size: 15px;
+    }
 }

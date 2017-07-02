@@ -5,7 +5,7 @@
 </ion-header>
 
 <ion-content  padding-top class="body">
-      <ion-item>  
+      <ion-item (click)="In()">  
            <ion-card class="content">  
       <ion-item>  
         <ion-avatar item-left>  
@@ -16,7 +16,7 @@
       
       </ion-item>  
      
-      <ion-card-content  >  
+      <ion-card-content  class="yanse">  
         <ion-list>
           <ion-item>
             <h3>今天&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;复习六级词汇</h3>  
@@ -45,4 +45,200 @@
       </ion-item>
     </ion-list>
   </ion-card>
+
+  <ion-card class="huadong">
+    <ion-card-header class="font_center">
+    <h1 class="tuijian">推荐·图书</h1>
+    <hr>
+    </ion-card-header>
+    <ion-card-content  > 
+    <ion-slides>
+      <ion-slide>
+       
+        <ion-row>
+          <ion-col col-4>
+            <ion-thumbnail>
+              <img src="https://img3.doubanio.com/lpic/s8861123.jpg" />
+            </ion-thumbnail>
+          </ion-col>
+          <ion-col col-4>
+             <ion-thumbnail>
+              <img src="https://img3.doubanio.com/lpic/s27066405.jpg" />
+            </ion-thumbnail>
+          </ion-col>
+          <ion-col col-4>
+             <ion-thumbnail>
+              <img src="https://img3.doubanio.com/lpic/s4130040.jpg" />
+            </ion-thumbnail>
+          </ion-col>
+        </ion-row>
+        
+        <ion-row>
+          <ion-col col-4>
+             <h2 class="bookname">我在DK的出版岁月</h2>
+          </ion-col>
+          <ion-col col-4>
+             <h2 class="bookname">读书年代</h2>
+          </ion-col>
+          <ion-col col-4>
+             <h2 class="bookname">教授与疯子</h2>
+          </ion-col>
+        </ion-row>
+       
+      </ion-slide>
+      <ion-slide>
+        <ion-row>
+          <ion-col col-4>
+            <ion-thumbnail>
+              <img src="https://img1.doubanio.com/lpic/s28047399.jpg" />
+            </ion-thumbnail>
+          </ion-col>
+          <ion-col col-4>
+             <ion-thumbnail>
+              <img src="https://img3.doubanio.com/lpic/s28986224.jpg" />
+            </ion-thumbnail>
+          </ion-col>
+          <ion-col col-4>
+             <ion-thumbnail>
+              <img src="https://img3.doubanio.com/lpic/s28381324.jpg" />
+            </ion-thumbnail>
+          </ion-col>
+        </ion-row>
+        
+        <ion-row>
+          <ion-col col-4>
+             <h2 class="bookname">纸的挽歌</h2>
+          </ion-col>
+          <ion-col col-4>
+             <h2 class="bookname">文学阅读指南</h2>
+          </ion-col>
+          <ion-col col-4>
+             <h2 class="bookname">如何读为何读</h2>
+          </ion-col>
+        </ion-row>
+      </ion-slide>
+      <ion-slide>
+        <ion-row>
+          <ion-col col-4>
+            <ion-thumbnail>
+              <img src="https://img3.doubanio.com/lpic/s4537673.jpg" />
+            </ion-thumbnail>
+          </ion-col>
+          <ion-col col-4>
+             <ion-thumbnail>
+              <img src="https://img1.doubanio.com/lpic/s28381308.jpg" />
+            </ion-thumbnail>
+          </ion-col>
+          <ion-col col-4>
+             <ion-thumbnail>
+              <img src="https://img1.doubanio.com/lpic/s29337927.jpg" />
+            </ion-thumbnail>
+          </ion-col>
+        </ion-row>
+        
+        <ion-row>
+          <ion-col col-4>
+             <h2 class="bookname">人文文本</h2>
+          </ion-col>
+          <ion-col col-4>
+             <h2 class="bookname">阅读的至乐</h2>
+          </ion-col>
+          <ion-col col-4>
+             <h2 class="bookname">女少年</h2>
+          </ion-col>
+        </ion-row>
+      </ion-slide>
+    </ion-slides>
+    <hr>
+    </ion-card-content>
+    
+  </ion-card>
+
+ <ion-card class="huadong">
+    <ion-card-header class="font_center">
+    <h1 class="tuijian">推荐·课程</h1>
+    <hr>
+    </ion-card-header>
+    <ion-card-content  > 
+    <ion-slides>
+      <ion-slide>
+       
+        <ion-row>
+          <ion-col col-6>
+            <ion-thumbnail>
+              <img src="http://edu-image.nosdn.127.net/4a40dc9f-544e-4058-82aa-20856882ecfb.jpg?imageView&quality=100" />
+            </ion-thumbnail>
+          </ion-col>
+          <ion-col col-6>
+             <ion-thumbnail>
+              <img src="http://edu-image.nosdn.127.net/d290d9ab-fb76-41ad-a38d-1f51a12a7efa.jpg?imageView&quality=100" />
+            </ion-thumbnail>
+          </ion-col>
+        </ion-row>
+        
+        <ion-row>
+          <ion-col col-6>
+             <h2 class="bookname">跟大锤一起十倍速读</h2>
+          </ion-col>
+          <ion-col col-6>
+             <h2 class="bookname">轻松手绘：用简笔画提升你的竞争力</h2>
+          </ion-col>
+        </ion-row>
+       
+      </ion-slide>
+
+      <ion-slide>
+        <ion-row>
+          <ion-col col-6>
+            <ion-thumbnail>
+              <img src="http://edu-image.nosdn.127.net/50b04649-1f50-4e31-9ddb-d6a617a5e742.jpg?imageView&quality=100" />
+            </ion-thumbnail>
+          </ion-col>
+          <ion-col col-6>
+             <ion-thumbnail>
+              <img src="http://edu-image.nosdn.127.net/B7311CD0C32081E82D72E58F0F19EB2D.png?imageView&thumbnail=225y142&quality=100" />
+            </ion-thumbnail>
+          </ion-col>
+        </ion-row>
+        
+        <ion-row>
+          <ion-col col-6>
+             <h2 class="bookname">标准普通话轻松学</h2>
+          </ion-col>
+          <ion-col col-6>
+             <h2 class="bookname">和外教学意大利语发音</h2>
+          </ion-col>
+        </ion-row>
+      </ion-slide>
+
+      <ion-slide>
+        <ion-row>
+          <ion-col col-6>
+            <ion-thumbnail>
+              <img src="http://edu-image.nosdn.127.net/cc0d2e14-9956-47d1-8806-aa7a540cc444.jpg?imageView&quality=100" />
+            </ion-thumbnail>
+          </ion-col>
+          <ion-col col-6>
+             <ion-thumbnail>
+              <img src="http://edu-image.nosdn.127.net/8E12914771C3A24DEB20C8049DEDBA73.png?imageView&thumbnail=225y142&quality=100" />
+            </ion-thumbnail>
+          </ion-col>
+        </ion-row>
+        
+        <ion-row>
+          <ion-col col-6>
+             <h2 class="bookname">Excel商业模板大法</h2>
+          </ion-col>
+          <ion-col col-6>
+             <h2 class="bookname">零基础SCI论文实操课</h2>
+          </ion-col>
+        </ion-row>
+      </ion-slide>
+
+    </ion-slides>
+    <hr>
+    </ion-card-content>
+    
+  </ion-card>
+
 </ion-content>

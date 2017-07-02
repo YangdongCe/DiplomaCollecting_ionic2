@@ -1,0 +1,50 @@
+<ion-header >
+  <ion-toolbar color="rouhe">
+    <ion-title class="font_center">
+     &nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Plan
+    </ion-title>
+    <ion-buttons start>
+      <button ion-button (click)="Dismiss()">
+        <ion-icon name="md-close-circle" style="font-size:30px"></ion-icon>
+      </button>
+    </ion-buttons>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content style="background-color:#E0E0E0">
+<ion-card class="box">
+	<div class="inbox">
+	<ion-row>
+    <ion-col col-3>
+	<div class="circular--landscape">
+    <img src="assets/touxiang.jpg" />
+	</div>
+    </ion-col>
+		<ion-col col-9>
+      <div class="text"><ion-icon name="ios-clipboard" style="font-size:30px;"></ion-icon>  &nbsp;&nbsp;&nbsp;{{content}}</div>
+    </ion-col>
+	</ion-row>
+	</div>
+</ion-card>
+	
+	
+
+
+ <ion-card class="date-wrap">
+   <div class="date-head">
+        <a (click)="goPrev()" class="left-btn">&lt;</a>{{dateObject.month}}<a class="right-btn" (click)="goNext()">&gt;</a>
+				{{dateObject.year}}
+    </div>
+    <div class="date-body">
+        <div class="date-day" style="color:lightslategray">Sun</div>
+        <div class="date-day">Mon</div>
+        <div class="date-day">Tue</div>
+        <div class="date-day">Wed</div>
+        <div class="date-day">Thu</div>
+        <div class="date-day">Fri</div>
+        <div class="date-day" style="color:lightslategray">Sat</div>
+        <div *ngFor="let item of dateObject.datesArray" class="date-item" [class.active]="item==dateObject.nowDay" [class.exam]="item==examday" (click)="getday(item)">{{item}}</div>
+
+    </div>
+ </ion-card>
+</ion-content>

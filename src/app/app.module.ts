@@ -26,6 +26,7 @@ import { DipDetailPage } from '../pages/diploma_detail/diploma_detail'
 import { NewsPage } from '../pages/newspage/newspage';
 import { CommunitPage } from '../pages/community/community';
 import { CommunitDetailPage } from '../pages/communitydetail/communitydetail';
+import { Plan } from '../pages/plan/plan';
 @NgModule({
   declarations: [
     MyApp,
@@ -49,7 +50,8 @@ import { CommunitDetailPage } from '../pages/communitydetail/communitydetail';
     DipDetailPage,
     NewsPage,
     CommunitPage,
-    CommunitDetailPage
+    CommunitDetailPage,
+    Plan
   ],
   imports: [
     BrowserModule,
@@ -80,7 +82,8 @@ import { CommunitDetailPage } from '../pages/communitydetail/communitydetail';
     DipDetailPage,
     NewsPage,
     CommunitPage,
-    CommunitDetailPage
+    CommunitDetailPage,
+    Plan
   ],
   providers: [
     StatusBar,

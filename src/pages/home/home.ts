@@ -1,9 +1,10 @@
 import { Component } from '@angular/core';
-import { NavController } from 'ionic-angular';
+import { NavController ,ModalController, ViewController } from 'ionic-angular';
 import { HomeservePage } from '../homeserve/homeserve';
 import { Searchdiploma } from '../home/searchdiploma';
-import { Newlistservices } from '../../services/newlistservices'
-import { NewsPage } from '../newspage/newspage'
+import { Newlistservices } from '../../services/newlistservices';
+import { NewsPage } from '../newspage/newspage';
+import { Plan } from '../plan/plan';
 @Component({
   selector: 'page-home',
   templateUrl: 'home.html'
@@ -17,7 +18,7 @@ export class HomePage {
    content:string;
    photo:URL;
    newfist:any;
-  constructor(public navCtrl: NavController,private newlist: Newlistservices) {
+  constructor(public navCtrl: NavController,private newlist: Newlistservices,public modalCtrl: ModalController) {
 }
 
   getItems() {
@@ -43,4 +44,9 @@ export class HomePage {
       item:item
     })
   }
+  In(){
+     let modal = this.modalCtrl.create(Plan);
+    modal.present();
+  }
+
 }
