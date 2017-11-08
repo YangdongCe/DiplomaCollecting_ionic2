@@ -15,7 +15,7 @@ export class HomePage {
    items = [];
    topic:string;
    description:string;
-   content:string;
+   content:string; 
    photo:URL;
    newfist:any;
   constructor(public navCtrl: NavController,private newlist: Newlistservices,public modalCtrl: ModalController) {

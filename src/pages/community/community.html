@@ -10,18 +10,37 @@
         <ion-list>
             <button ion-item (click)='view(item)' *ngFor="let item of items">
             <ion-item>
-            <ion-avatar item-left>
-            <img src="{{item.image}}">
+            <ion-avatar item-start>
+               <img src="{{item.image}}">
             </ion-avatar>
-            <h2>{{item.name}}<ion-note style="float:right">{{item.time}}</ion-note></h2>
-            
-            </ion-item>
-            <ion-item>
-            <h6>{{item.title}}</h6 >
-            <ion-note>{{item.digest}}</ion-note>
-            </ion-item>
-            <hr>
+            <h2>{{item.name}}</h2>
+            <h6>{{item.time}}</h6>
+            <h4>{{item.title}}</h4 >
+           <ion-card-content>{{item.digest1}}</ion-card-content>
+           <ion-row no-padding>
+            <ion-col>
+                <button ion-button icon-left clear small>
+                    <ion-icon name="thumbs-up"></ion-icon>
+                        <div>{{item.like}} </div>
+                </button>
+            </ion-col>
+            <ion-col>
+                <button ion-button icon-left clear small>
+                    <ion-icon name="thumbs-down"></ion-icon>
+                        <div>{{item.dislike}} </div>
+                </button>
+            </ion-col>
+            <ion-col>
+                <button ion-button icon-left clear small>
+                    <ion-icon name="text"></ion-icon>
+                        <div>{{item.comment}}</div>
+                </button>
+            </ion-col>
+          </ion-row>
+         </ion-item>
+        <hr>
             </button>
         </ion-list>
     </ion-card>
-</ion-content>
+
+  
